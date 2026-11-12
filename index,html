@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autoetnografi Digital | Yigal Amiel Benggu</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,sans-serif}
+body{background:#f1f5f9;color:#1e293b;line-height:1.6}
+nav{background:#090d16;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+nav b{font-size:15px;letter-spacing:.5px}
+nav span{color:#eab308}
+nav a{color:#cbd5e1;text-decoration:none;font-size:13px;margin-left:12px}
+header{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;padding:45px 20px;text-align:center}
+.badge{display:inline-block;background:rgba(234,179,8,.15);border:1px solid #eab308;color:#fde047;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+header h1{font-size:26px;margin-bottom:8px}
+header p{color:#cbd5e1;font-size:14px;max-width:650px;margin:0 auto}
+.tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+.tag{background:rgba(2,132,199,.25);border:1px solid #38bdf8;color:#e0f2fe;padding:4px 10px;border-radius:6px;font-size:12px}
+.container{max-width:900px;margin:24px auto;padding:0 15px;display:flex;flex-direction:column;gap:22px}
+.card{background:#fff;padding:22px;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.05);border:1px solid #e2e8f0}
+h2{font-size:18px;color:#0f172a;margin-bottom:4px}
+.desc{font-size:13px;color:#64748b;margin-bottom:16px;border-bottom:1px solid #f1f5f9;padding-bottom:10px}
+.list{list-style:none}
+.list li{padding:9px 0;border-bottom:1px solid #f1f5f9;display:flex;justify-content:space-between;font-size:14px;gap:10px}
+.list strong{color:#0f172a;text-align:right}
+.org{background:#f8fafc;padding:14px;border-left:4px solid #0284c7;margin-top:12px;border-radius:8px}
+.org.pmii{border-left-color:#eab308}
+.org h4{font-size:15px;color:#0f172a;margin-bottom:4px}
+.org p{font-size:13px;color:#475569}
+.controls{display:flex;flex-wrap:wrap;gap:10px;background:#f8fafc;padding:14px;border-radius:10px;margin-bottom:16px;border:1px solid #e2e8f0}
+.controls div{display:flex;flex-direction:column;gap:4px;flex:1;min-width:130px}
+label{font-size:12px;font-weight:600;color:#334155}
+input{padding:8px 10px;border:1px solid #cbd5e1;border-radius:6px;font-size:14px}
+button{background:#0284c7;color:#fff;border:none;padding:10px 16px;border-radius:6px;font-weight:600;cursor:pointer;width:100%;margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px;text-align:center}
+.stat{background:#f8fafc;padding:14px;border-radius:10px;border:1px solid #e2e8f0}
+.stat h3{color:#0284c7;font-size:22px}
+.stat p{font-size:12px;color:#64748b}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;margin-bottom:12px}
+.dot{width:11px;height:11px;display:inline-block;border-radius:2px;margin-right:4px}
+.scroll{overflow-x:auto;padding-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(52,1fr);gap:2px;min-width:600px}
+.box{aspect-ratio:1;background:#e2e8f0;border-radius:1px}
+.past{background:#1e293b}
+.college{background:#0284c7}
+.now{background:#ef4444}
+.timeline{border-left:2px solid #0284c7;padding-left:16px;margin-left:6px}
+.t-item{margin-bottom:14px;position:relative}
+.t-item::before{content:'';width:10px;height:10px;background:#0284c7;border-radius:50%;position:absolute;left:-22px;top:6px}
+.t-item span{font-size:12px;font-weight:700;color:#0284c7}
+.t-item h4{font-size:15px;color:#0f172a}
+.t-item p{font-size:13px;color:#64748b}
+.routine{background:#f8fafc;padding:10px 12px;border-radius:8px;margin-bottom:8px;font-size:14px;border:1px solid #f1f5f9}
+.project{background:#f8fafc;padding:14px;border-radius:8px;margin-bottom:10px;border:1px solid #e2e8f0}
+.project h4{font-size:15px;color:#0f172a;margin-bottom:4px}
+.project p{font-size:13px;color:#64748b}
+.goal{padding:7px 0;font-size:14px;border-bottom:1px dashed #e2e8f0}
+footer{background:#0f172a;color:#94a3b8;text-align:center;padding:28px 20px;font-size:13px;margin-top:30px}
+footer strong{color:#fff}
+</style>
+</head>
+<body>
+
+<nav>
+  <b>AUTOETNOGRAFI <span>IGAL</span></b>
+  <div>
+    <a href="#profil">Profil</a>
+    <a href="#waktu">Waktu</a>
+    <a href="#aktivitas">Aktivitas</a>
+    <a href="#target">Target</a>
+  </div>
+</nav>
+
+<header>
+  <div class="badge">Dokumentasi Longitudinal Diri</div>
+  <h1>Autoetnografi Digital: Yigal Amiel Benggu</h1>
+  <p>Kronik eksistensial, refleksi keseharian, dan rekam jejak intelektual mahasiswa Informatika, pegiat olahraga kampus, serta kader pergerakan.</p>
+  <div class="tags">
+    <span class="tag">Informatika — FMIKOM</span>
+    <span class="tag">UNUGHA Cilacap</span>
+    <span class="tag">UKM Olahraga</span>
+    <span class="tag">Kader PMII</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="card" id="profil">
+    <h2>01. Profil Akademik & Ruang Pergerakan</h2>
+    <p class="desc">Sintesis antara logika komputasi, kebugaran fisik, dan dialektika sosial kemahasiswaan.</p>
+    <ul class="list">
+      <li><span>Nama Lengkap</span><strong>Yigal Amiel Benggu</strong></li>
+      <li><span>Nama Panggilan</span><strong>Igal</strong></li>
+      <li><span>Program Studi</span><strong>Informatika</strong></li>
+      <li><span>Fakultas</span><strong>FMIKOM</strong></li>
+      <li><span>Perguruan Tinggi</span><strong>UNU Al-Ghazali (UNUGHA) Cilacap</strong></li>
+    </ul>
+    <div class="org">
+      <h4>Organisasi Internal: UKM Olahraga UNUGHA</h4>
+      <p>Aktif mengembangkan sportivitas, kebugaran fisik, disiplin latihan, dan kerja sama tim di lingkungan kampus.</p>
+    </div>
+    <div class="org pmii">
+      <h4>Organisasi Eksternal: PMII (Pergerakan Mahasiswa Islam Indonesia)</h4>
+      <p>Aktif dalam ruang kaderisasi, kajian intelektual, pengembangan kepemimpinan, dan pengabdian sosial.</p>
+    </div>
+  </div>
+
+  <div class="card" id="waktu">
+    <h2>02. Peta Waktu Kehidupan (Memento Mori)</h2>
+    <p class="desc">Setiap 1 baris mewakili 1 tahun (52 minggu). Sesuaikan tanggal lahir dan usia masuk kuliah di bawah ini.</p>
+    <div class="controls">
+      <div><label>Tanggal Lahir Igal:</label><input type="date" id="dob" value="2005-05-15"></div>
+      <div><label>Usia Masuk Kuliah:</label><input type="number" id="kuliah" value="19"></div>
+      <div><label>Proyeksi Usia (Thn):</label><input type="number" id="max" value="80"></div>
+      <button onclick="buatGrid()">Perbarui Peta Waktu</button>
+    </div>
+    <div class="stats">
+      <div class="stat"><h3 id="wLived">0</h3><p>Minggu Terlewati</p></div>
+      <div class="stat"><h3 id="dLived">0</h3><p>Total Hari Hidup</p></div>
+      <div class="stat"><h3 id="wLeft">0</h3><p>Estimasi Sisa Minggu</p></div>
+      <div class="stat"><h3 id="pct">0%</h3><p>Perjalanan Selesai</p></div>
+    </div>
+    <div class="legend">
+      <span><i class="dot" style="background:#1e293b"></i>Masa Lalu</span>
+      <span><i class="dot" style="background:#0284c7"></i>Fase Kuliah (4 Thn)</span>
+      <span><i class="dot" style="background:#ef4444"></i>Minggu Ini</span>
+      <span><i class="dot" style="background:#e2e8f0"></i>Masa Depan</span>
+    </div>
+    <div class="scroll"><div class="grid" id="grid"></div></div>
+  </div>
+
+  <div class="card" id="aktivitas">
+    <h2>03. Jejak Perjalanan & Ritme Keseharian</h2>
+    <p class="desc">Catatan keseimbangan antara perkuliahan teknis, latihan fisik, dan dinamika organisasi.</p>
+    <div class="timeline">
+      <div class="t-item">
+        <span>Fase Fondasi</span>
+        <h4>Pendidikan Menengah & Pembentukan Minat</h4>
+        <p>Menyelesaikan jenjang sekolah serta menumbuhkan minat kuat pada dunia teknologi dan olahraga.</p>
+      </div>
+      <div class="t-item">
+        <span>Fase Perkuliahan</span>
+        <h4>Mahasiswa Informatika FMIKOM UNUGHA Cilacap</h4>
+        <p>Mendalami algoritma, struktur data, pemrograman web, dan rekayasa perangkat lunak.</p>
+      </div>
+      <div class="t-item">
+        <span>Fase Aktivisme</span>
+        <h4>Sinergi UKM Olahraga & Kaderisasi PMII</h4>
+        <p>Menjaga kesehatan jasmani lewat UKM Olahraga serta mengasah nalar kritis bersama sahabat-sahabat PMII.</p>
+      </div>
+    </div>
+    <div class="routine"><strong>Fokus Akademik:</strong> Pemrograman, Logika Algoritma & Pengembangan Web.</div>
+    <div class="routine"><strong>Fokus Fisik:</strong> Latihan rutin dan sportivitas bersama UKM Olahraga UNUGHA.</div>
+    <div class="routine"><strong>Prinsip Hidup:</strong> <em>"Mens sana in corpore sano & Dzikir, Fikir, Amal Sholeh."</em></div>
+  </div>
+
+  <div class="card" id="target">
+    <h2>04. Portofolio Proyek & Target Strategis</h2>
+    <p class="desc">Dokumentasi karya informatika dan daftar pencapaian selama masa studi.</p>
+    <div class="project">
+      <h4>Website Autoetnografi Digital (GitHub Pages)</h4>
+      <p>Perancangan arsip web interaktif berbasis HTML, CSS, dan JavaScript untuk memetakan perjalanan waktu dan profil akademik.</p>
+    </div>
+    <div class="project">
+      <h4>Eksplorasi Rekayasa Perangkat Lunak FMIKOM</h4>
+      <p>Pengembangan aplikasi berbasis logika pemrograman dan basis data sebagai implementasi mata kuliah Informatika.</p>
+    </div>
+    <div class="goal">✅ Bergabung dan aktif di UKM Olahraga UNUGHA Cilacap</div>
+    <div class="goal">✅ Mengikuti proses kaderisasi dan aktif di PMII</div>
+    <div class="goal">✅ Membangun website Autoetnografi Digital di GitHub</div>
+    <div class="goal">⬜ Mengikuti magang industri teknologi atau riset pengembangan sistem</div>
+    <div class="goal">⬜ Lulus tepat waktu sebagai Sarjana Komputer (S.Kom.) dengan hasil terbaik</div>
+  </div>
+</div>
+
+<footer>
+  <strong>Autoetnografi Digital — Yigal Amiel Benggu (Igal)</strong><br>
+  Informatika FMIKOM | Universitas Nahdlatul Ulama Al-Ghazali Cilacap
+</footer>
+
+<script>
+function buatGrid(){
